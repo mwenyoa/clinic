@@ -28,10 +28,9 @@ CREATE TABLE medical_histories(
 
 -- CREATE TABLE TREATMENTS
   CREATE TABLE treatments(
-  id INT REFERENCES medical_histories(id) PRIMARY KEY,
+  id INT  medical_histories(id) PRIMARY KEY,
   type VARCHAR,
   name VARCHAR
-
   );
 
   -- CREATE TABLE INVOICE_ITEMS
@@ -42,3 +41,11 @@ CREATE TABLE medical_histories(
   invoice_id INT  REFERENCES invoices(id),
   treatment_id INT  REFERENCES treatments(id)
   );
+
+
+  -- CREATE JOIN TABLE BETWEEN MEDICAL HISTORY AND TREATMENTS
+  CREATE TABLE medical_histories_treatment (
+    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    treatment_id INT  REFERENCES treatments(id), 
+    id INT REFERENCES medical_histories(id)
+  )
