@@ -12,18 +12,17 @@ This repository includes ```schema_based_on_diagram.sql``` file with plain SQL t
 
 ## Authors
 
-👤 **Author1**
+ 👤 **Anthony Mwenyo**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/mwenyoa)
+- Twitter: [@twitterhandle](https://twitter.com/anthony_mwenyo)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/anthony-mwenyo/)
 
-👤 **Author2**
+👤 **Gedeon Ushindi**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
+- GitHub: [@GedeonTS](https://github.com/GedeonTS)
+- Twitter: [@Gedeon191](https://twitter.com/Gedeon191)
+- LinkedIn: [Ushindi Gedeon](https://linkedin.com/in/ushindi-gedeon)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
