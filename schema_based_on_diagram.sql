@@ -49,3 +49,7 @@ CREATE TABLE medical_histories(
     treatment_id INT  REFERENCES treatments(id), 
     id INT REFERENCES medical_histories(id)
   )
+
+  -- INDEXES FOR ALL FOREIGN KEYS
+  CREATE INDEX medical_histories_patient_id ON medical_histories(patient_id);
+
