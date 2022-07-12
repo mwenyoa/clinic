@@ -26,3 +26,10 @@ CREATE TABLE medical_histories(
   medical_history_id INT  REFERENCES medical_histories(id)
   );
 
+-- CREATE TABLE TREATMENTS
+  CREATE TABLE treatments(
+  id INT REFERENCES medical_histories(id) PRIMARY KEY,
+  type VARCHAR,
+  name VARCHAR
+
+  );
