@@ -53,3 +53,4 @@ CREATE TABLE medical_histories(
   -- INDEXES FOR ALL FOREIGN KEYS
   CREATE INDEX medical_histories_patient_id ON medical_histories(patient_id);
 
+  CREATE INDEX invoices_medical_history_id  ON invoices(medical_history_id);
