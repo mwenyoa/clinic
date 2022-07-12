@@ -33,3 +33,12 @@ CREATE TABLE medical_histories(
   name VARCHAR
 
   );
+
+  -- CREATE TABLE INVOICE_ITEMS
+  CREATE TABLE invoice_items(
+  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  unit_price DECIMAL,
+  quantity INT, 
+  invoice_id INT  REFERENCES invoices(id),
+  treatment_id INT  REFERENCES treatments(id)
+  );
