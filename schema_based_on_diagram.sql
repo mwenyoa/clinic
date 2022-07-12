@@ -47,10 +47,12 @@ CREATE TABLE medical_histories(
   CREATE TABLE medical_histories_treatment (
     id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     treatment_id INT  REFERENCES treatments(id), 
-    id INT REFERENCES medical_histories(id)
+    medical_histories_id INT REFERENCES medical_histories(id)
   )
 
   -- INDEXES FOR ALL FOREIGN KEYS
   CREATE INDEX medical_histories_patient_id ON medical_histories(patient_id);
 
   CREATE INDEX invoices_medical_history_id  ON invoices(medical_history_id);
+
+  CREATE INDEX invoice_items_invoice_id ON invoice_items(invoice_id);
