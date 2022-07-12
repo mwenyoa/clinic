@@ -16,3 +16,13 @@ CREATE TABLE medical_histories(
  admitted_at TIMESTAMP, 
  patient_id INT  REFERENCES patients(id)
 );
+
+-- CREATE TABLE INVOICES
+  CREATE TABLE invoices(
+  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  total_amount DECIMAL,
+  generated_at TIMESTAMP, 
+  payed_at TIMESTAMP, 
+  medical_history_id INT  REFERENCES medical_histories(id)
+  );
+
